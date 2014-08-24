@@ -1,0 +1,13 @@
+{
+  "name": "Kill Youtube Feed",
+  "version": "1.0.0",
+  "description": "Kills the Youtube feed.",
+  "content_scripts": [{
+    "matches": ["*://*.youtube.com/*"],
+    "js": ["kill.js"],
+    "run_at": "document_start"
+  }],
+  "icons": {
+  },
+  "manifest_version": 2
+}
